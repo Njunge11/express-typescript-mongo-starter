@@ -5,13 +5,7 @@ export class ProblemDetailError extends Error {
   public readonly detail: string;
   public readonly instance?: string;
 
-  constructor(
-    status: number,
-    type: string,
-    title: string,
-    detail: string,
-    instance?: string
-  ) {
+  constructor(status: number, type: string, title: string, detail: string, instance?: string) {
     super(detail);
     this.status = status;
     this.type = type;
